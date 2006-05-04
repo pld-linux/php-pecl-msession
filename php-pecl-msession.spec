@@ -9,11 +9,13 @@ Summary:	msession extension module for PHP
 Summary(pl):	Modu³ msession dla PHP
 Name:		php-pecl-%{_modname}
 Version:	1.0
-Release:	0.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
+# extracted from php-5.1.2 sources as pecl/msession appears to be older
 Source0:	%{_modname}.tar.bz2
-# Source0-md5:	3a5b6bf9aa3c7d1abac18a5b484c0897
+# Source0-md5:	a256f635be818a7247d7be15061256f0
+Patch0:		msession-shared-lib.patch
 URL:		http://pecl.php.net/package/msession/
 BuildRequires:	phoenix-devel
 BuildRequires:	php-devel >= 3:5.0.0
@@ -42,10 +44,12 @@ To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
 %setup -q -n %{_modname}
+%patch0 -p3
 
 %build
 phpize
-%configure
+%configure \
+	--with-msession=shared,/usr
 %{__make}
 
 %install
