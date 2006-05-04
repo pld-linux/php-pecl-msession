@@ -1,3 +1,6 @@
+# NOTE:
+# there's no maintainer for the pecl project, so consider this
+# extension dead.
 %define		_modname	msession
 %define		_status		stable
 %define		_sysconfdir	/etc/php
@@ -5,11 +8,11 @@
 Summary:	msession extension module for PHP
 Summary(pl):	Modu³ msession dla PHP
 Name:		php-pecl-%{_modname}
-Version:	0
-Release:	0
+Version:	1.0
+Release:	0.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
+Source0:	%{_modname}.tar.bz2
 # Source0-md5:	3a5b6bf9aa3c7d1abac18a5b484c0897
 URL:		http://pecl.php.net/package/msession/
 BuildRequires:	phoenix-devel
@@ -38,10 +41,9 @@ serwerów.
 To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
-%setup -q -c
+%setup -q -n %{_modname}
 
 %build
-cd %{_modname}-%{version}
 phpize
 %configure
 %{__make}
@@ -50,7 +52,7 @@ phpize
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sysconfdir}/conf.d,%{extensionsdir}}
 
-install %{_modname}-%{version}/modules/%{_modname}.so $RPM_BUILD_ROOT%{extensionsdir}
+install modules/%{_modname}.so $RPM_BUILD_ROOT%{extensionsdir}
 cat <<'EOF' > $RPM_BUILD_ROOT%{_sysconfdir}/conf.d/%{_modname}.ini
 ; Enable %{_modname} extension module
 extension=%{_modname}.so
