@@ -22,15 +22,15 @@ BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.254
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
-Provides:	php-msession = 4:5.1.2-9
+Provides:	php-msession = 4:5.1.2
 Obsoletes:	php-msession
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a dynamic shared object (DSO) for PHP that will allow you to
-use msession. msession is a high speed session daemon which can run
-either locally or remotely. It is designed to provide consistent
-session management for a PHP web farm.
+msession is a high speed session daemon which can run either locally
+or remotely. It is designed to provide consistent session management
+for a PHP web farm.
 
 In PECL status of this extension is: %{_status}.
 
