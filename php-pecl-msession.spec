@@ -19,7 +19,7 @@ Patch0:		msession-shared-lib.patch
 URL:		http://pecl.php.net/package/msession/
 BuildRequires:	phoenix-devel
 BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.254
+BuildRequires:	rpmbuild(macros) >= 1.322
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 Provides:	php-msession = 4:5.1.2
