@@ -9,7 +9,7 @@ Summary:	msession extension module for PHP
 Summary(pl):	Modu³ msession dla PHP
 Name:		php-pecl-%{_modname}
 Version:	1.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # extracted from php-5.1.2 sources as pecl/msession appears to be older
@@ -22,7 +22,7 @@ BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.322
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
-Provides:	php-msession = 4:5.1.2
+Provides:	php(msession)
 Obsoletes:	php-msession
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
