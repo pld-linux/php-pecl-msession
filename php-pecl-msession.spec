@@ -9,7 +9,7 @@ Summary:	msession extension module for PHP
 Summary(pl):	Modu³ msession dla PHP
 Name:		php-pecl-%{_modname}
 Version:	1.0
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # extracted from php-5.1.2 sources as pecl/msession appears to be older
