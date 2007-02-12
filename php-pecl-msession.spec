@@ -4,7 +4,7 @@
 %define		_modname	msession
 %define		_status		stable
 Summary:	msession extension module for PHP
-Summary(pl):	Modu≥ msession dla PHP
+Summary(pl.UTF-8):   Modu≈Ç msession dla PHP
 Name:		php-pecl-%{_modname}
 Version:	1.0
 Release:	3
@@ -32,11 +32,11 @@ for a PHP web farm.
 
 In PECL status of this extension is: %{_status}.
 
-%description -l pl
-Modu≥ PHP dodaj±cy umoøliwiaj±cy korzystanie z demona msession. Jest
-to demon szybkiej obs≥ugi sesji, ktÛry moøe dzia≥aÊ lokalnie lub na
-innej maszynie. S≥uøy do zapewniania spÛjnej obs≥ugi sesji dla farmy
-serwerÛw.
+%description -l pl.UTF-8
+Modu≈Ç PHP dodajƒÖcy umo≈ºliwiajƒÖcy korzystanie z demona msession. Jest
+to demon szybkiej obs≈Çugi sesji, kt√≥ry mo≈ºe dzia≈Çaƒá lokalnie lub na
+innej maszynie. S≈Çu≈ºy do zapewniania sp√≥jnej obs≈Çugi sesji dla farmy
+serwer√≥w.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
