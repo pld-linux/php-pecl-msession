@@ -4,7 +4,7 @@
 %define		_modname	msession
 %define		_status		stable
 Summary:	msession extension module for PHP
-Summary(pl.UTF-8):   Moduł msession dla PHP
+Summary(pl.UTF-8):	Moduł msession dla PHP
 Name:		php-pecl-%{_modname}
 Version:	1.0
 Release:	3
