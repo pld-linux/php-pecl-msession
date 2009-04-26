@@ -3,12 +3,12 @@
 # extension dead.
 %define		_modname	msession
 %define		_status		stable
-Summary:	msession extension module for PHP
-Summary(pl.UTF-8):	Moduł msession dla PHP
+Summary:	%{_modname} - extension module for PHP
+Summary(pl.UTF-8):	%{_modname} - moduł msession dla PHP
 Name:		php-pecl-%{_modname}
 Version:	1.0
 Release:	3
-License:	PHP 2.02
+License:	PHP 3.01
 Group:		Development/Languages/PHP
 # extracted from php-5.1.2 sources as pecl/msession appears to be older
 Source0:	%{_modname}.tar.bz2
