@@ -8,7 +8,7 @@ Summary:	%{modname} - extension module for PHP
 Summary(pl.UTF-8):	%{modname} - moduł msession dla PHP
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.0
-Release:	4
+Release:	5
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 # extracted from php-5.1.2 sources as pecl/msession appears to be older
